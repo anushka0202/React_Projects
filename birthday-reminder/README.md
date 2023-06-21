@@ -1,3 +1,3 @@
 # Birthday Reminder
 
-Live Demo: 
+Live Demo: https://birthday-reminder-anushka.netlify.app/
