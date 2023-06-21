@@ -26,8 +26,8 @@ Shows the number of people falling in the range of following sets:
 ### 2. Pie-chart
 Depicts the distribution of people in different occupations in the given set.
 
-## 3. Population Table
+### 3. Population Table
 Shows a simple list of all people. 
 
-## 4. Family Tree
+### 4. Family Tree
 On selection of a row in the Population Table, one should be able to see the family tree. The family tree always starts with the topmost root of that family and highlights the person selected.
