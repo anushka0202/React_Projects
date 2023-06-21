@@ -2,6 +2,7 @@ import React from "react";
 
 const FamilyTree = ({ selectedPerson, data }) => {
   // Function to find the root of the family tree for a selected person
+  console.log("selected:", selectedPerson);
   const findRootPerson = (person) => {
     if (!person["Father's ID"]) {
       return person;
@@ -17,12 +18,23 @@ const FamilyTree = ({ selectedPerson, data }) => {
     const children = data.filter((p) => p["Father's ID"] === person.ID);
 
     if (children.length === 0) {
-      return <li key={person.ID}>{person.Name}</li>;
+      return (
+        <li
+          style={person.ID === selectedPerson.ID ? { fontWeight: "bold" } : {}}
+          key={person.ID}
+        >
+          {person.Name}
+        </li>
+      );
     }
 
     return (
-      <li key={person.ID}>
-        {person.ID} - {person.Name}
+      <li className="child" key={person.ID}>
+        <p
+          style={person.ID === selectedPerson.ID ? { fontWeight: "bold" } : {}}
+        >
+          {person.Name}
+        </p>
         <ul>{children.map((child) => buildFamilyTree(child))}</ul>
       </li>
     );
@@ -30,7 +42,7 @@ const FamilyTree = ({ selectedPerson, data }) => {
 
   // Render the family tree
   return (
-    <div className="family-tree-container">
+    <div className="tree">
       <h2>Family Tree</h2>
       {selectedPerson && (
         <ul>{buildFamilyTree(findRootPerson(selectedPerson))}</ul>

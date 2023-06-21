@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+#Population Insight
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live demo: https://population-insight.netlify.app/
 
-## Available Scripts
+Let's build an application where we can generate insight from a given data of people with following information
 
-In the project directory, you can run:
+Id
 
-### `npm start`
+Name
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Age
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Occupation
 
-### `npm test`
+Father's ID
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We need following components on the UI
 
-### `npm run build`
+##1. Histogram
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- show number of people falling in the range of follwing sets
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+a. 0-5 Years
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+b. 5-12 Years
 
-### `npm run eject`
+c. 13-21 Years
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+d. 22-29 Years
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+e. 30-50 Years
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+f. greater than 50 years
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##2. Pie-chart
 
-## Learn More
+- Depicts the distribution of people in different occupations in the given set.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##3. Population Table
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- we need to show a simple list of all people
 
-### Code Splitting
+##4. Family Tree
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- On selection of a row in the Population Table, one should be able to see the family tree. The family tree always starts with the top most root of that family and highlights the person selected.
