@@ -18,10 +18,15 @@ Let's build an application where we can generate insight from a given data of pe
 - show the number of people falling in the range of following sets
 
 a. 0-5 Years
+
 b. 5-12 Years
+
 c. 13-21 Years
+
 d. 22-29 Years
+
 e. 30-50 Years
+
 f. greater than 50 years
 
 ## 2. Pie-chart
