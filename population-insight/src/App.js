@@ -10,10 +10,13 @@ const App = () => {
   const [selectedPerson, setSelectedPerson] = useState(null);
   const [data, setData] = useState([]);
 
+  //to fetch and parse the CSV data using the PapaParse library.
   async function GetData() {
-    const Tempdata = Papa.parse(await fetchCsv());
+    const Tempdata = Papa.parse(await fetchCsv()); //We use Papa.parse to parse the fetched CSV data.
+
     var dataObj = [];
 
+    //We iterate over the parsed data to create individual person objects and store them in the dataObj array.
     for (var i = 1; i < Tempdata.data.length; i++) {
       var ID = Tempdata.data[i][0];
       var Name = Tempdata.data[i][1];
@@ -27,20 +30,24 @@ const App = () => {
     setData(dataObj);
     return Tempdata;
   }
+
+  //to fetch the CSV file.
   async function fetchCsv() {
-    const response = await fetch("newData.csv");
-    const reader = response.body.getReader();
+    const response = await fetch("newData.csv"); //We use the fetch API to get the CSV file.
+    const reader = response.body.getReader(); //We read the response body as a stream using the reader.
     const result = await reader.read();
-    const decoder = new TextDecoder("utf-8");
+    const decoder = new TextDecoder("utf-8"); //We decode the stream using a TextDecoder and store the decoded CSV data.
     const csv = await decoder.decode(result.value);
 
     return csv;
   }
 
+  //to call GetData when the component mounts
   useEffect(() => {
     GetData();
   });
 
+  //updates the selectedPerson state variable when a row is selected in the PopulationTable component.
   const handleRowSelect = (person) => {
     setSelectedPerson(person);
   };

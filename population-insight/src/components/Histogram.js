@@ -14,7 +14,7 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
-  LinearScale,
+  LinearScale, //y
   PointElement,
   LineElement,
   Title,
@@ -34,6 +34,7 @@ const Histogram = ({ data }) => {
     { label: "Greater than 50 years", count: 0 },
   ];
 
+  //We iterate over the data array, which contains the information of all the people, and update the count property of each ageRanges element based on the person's age.
   data.forEach((person) => {
     const age = person.Age;
     if (age >= 0 && age <= 5) {
@@ -53,11 +54,11 @@ const Histogram = ({ data }) => {
 
   // Prepare data for the bar chart
   const chartData = {
-    labels: ageRanges.map((range) => range.label),
+    labels: ageRanges.map((range) => range.label), //An array of labels representing the age ranges
     datasets: [
       {
         label: "Number of People",
-        data: ageRanges.map((range) => range.count),
+        data: ageRanges.map((range) => range.count), //An array of counts corresponding to each age range
         backgroundColor: "rgba(75, 192, 192, 0.6)",
       },
     ],

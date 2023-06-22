@@ -5,6 +5,7 @@ const PopulationTable = ({ data, onSelectRow }) => {
     <div className="population-table-container">
       <h2>Population Table</h2>
       <table>
+        {/* header row containing the column names */}
         <thead>
           <tr>
             <th>ID</th>
@@ -14,6 +15,9 @@ const PopulationTable = ({ data, onSelectRow }) => {
             <th>Father's ID</th>
           </tr>
         </thead>
+        {/* we map over the data array and render a row for each person. Each row
+        has a click event handler that calls the onSelectRow function with the
+        selected person as an argument. */}
         <tbody>
           {data.map((person) => (
             <tr key={person.ID} onClick={() => onSelectRow(person)}>
