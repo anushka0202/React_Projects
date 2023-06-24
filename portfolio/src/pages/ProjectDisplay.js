@@ -15,7 +15,12 @@ const ProjectDisplay = () => {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <GitHubIcon />
+      <a href={project.demo}>
+        <button className="btn">Live Demo</button>
+      </a>
+      <a href={project.github}>
+        <GitHubIcon />
+      </a>
     </div>
   );
 };

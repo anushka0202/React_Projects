@@ -14,9 +14,15 @@ const Home = () => {
             An aspiring software developer with a passion for learning and
             creating.
           </p>
-          <LinkedInIcon />
-          <GitHubIcon />
-          <EmailIcon />
+          <a href="https://www.linkedin.com/in/anushka-raj-bagun-9789b4195/">
+            <LinkedInIcon />
+          </a>
+          <a href="https://github.com/anushka0202">
+            <GitHubIcon />
+          </a>
+          <a href="mailto:anuraj.bagun02@gmail.com">
+            <EmailIcon />
+          </a>
         </div>
       </div>
       <div className="skills">

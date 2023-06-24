@@ -19,11 +19,24 @@
 }
 
 .project p {
-    font-size: 40px;
+    font-size: 30px;
     color: #3e497a;
 }
 
 .project svg {
     font-size: 60px;
     color: #3e497a;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    appearance: none;
+    font-size: 20px;
+    background-color: #3e497a;
+    color: #fff;
+    margin: 1rem;
+    padding: 12px;
+    min-width: 100px;
+    border: 0px;
 }
