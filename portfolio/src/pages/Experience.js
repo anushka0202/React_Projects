@@ -10,11 +10,11 @@ import WorkIcon from "@mui/icons-material/Work";
 function Experience() {
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#3e497a">
+      <VerticalTimeline lineColor="#1C1427">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2015 - 2016"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#1C1427", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -29,7 +29,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2017 - 2018"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#1C1427", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -46,7 +46,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2022 - 2022"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#7ECA9C", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -56,7 +56,7 @@ function Experience() {
             Bengaluru, Karnataka
           </h4>
           <p>
-            Fixed around 20 bugs, predominantly frontend, in the existing
+            Fixed around 20 bugs (predominantly frontend) in the existing
             product to enhance the user experience.
           </p>
         </VerticalTimelineElement>
@@ -64,7 +64,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2019 - 2023"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#1C1427", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -73,7 +73,7 @@ function Experience() {
 
           <h4 className="vertical-timeline-element-subtitle">B.E. Chemical</h4>
 
-          <p>CGPA: 7.56</p>
+          <p>CGPA: 7.68</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

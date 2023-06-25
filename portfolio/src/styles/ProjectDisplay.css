@@ -9,7 +9,7 @@
 
 .project h1 {
     margin-top: 50px;
-    color: #3e497a;
+    color: #1C1427;
     font-size: 35px;
 }
 
@@ -20,12 +20,12 @@
 
 .project p {
     font-size: 30px;
-    color: #3e497a;
+    color: #1C1427;
 }
 
 .project svg {
     font-size: 60px;
-    color: #3e497a;
+    color: #1C1427;
 }
 
 .btn {
@@ -33,7 +33,7 @@
     border-radius: 8px;
     appearance: none;
     font-size: 20px;
-    background-color: #3e497a;
+    background-color: #1C1427;
     color: #fff;
     margin: 1rem;
     padding: 12px;
