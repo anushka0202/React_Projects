@@ -31,10 +31,14 @@ const Home = () => {
         <h1>Skills</h1>
         <ol className="list">
           <li className="item">
+            <h2>Programming Languages</h2>
+            <span>JavaScript, TypeScript, C++</span>
+          </li>
+          <li className="item">
             <h2>Tools and Frameworks</h2>
             <span>
-              React.js, Redux, Unit Testing, C# .NET development, Git, GitLab,
-              Jira
+              React.js, Redux, Next.js, Unit Testing, Material UI, HTML, CSS,
+              Git, Jira, C# .NET development
             </span>
           </li>
           <li className="item">
@@ -45,8 +49,11 @@ const Home = () => {
             </span>
           </li>
           <li className="item">
-            <h2>Programming Languages</h2>
-            <span>JavaScript, C++, C#</span>
+            <h2>Certifications</h2>
+            <span>
+              Hands-On Introduction: React (LinkedIn), Web Development (QSTP,
+              BITS Goa)
+            </span>
           </li>
         </ol>
       </div>

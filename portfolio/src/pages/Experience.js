@@ -45,7 +45,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2022 - 2022"
+          date="Jul 2022 - Dec 2022"
           iconStyle={{ background: "#7ECA9C", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -74,6 +74,24 @@ function Experience() {
           <h4 className="vertical-timeline-element-subtitle">B.E. Chemical</h4>
 
           <p>CGPA: 7.68</p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Jun 2023 - Jul 2023"
+          iconStyle={{ background: "#7ECA9C", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            SDE Intern - Furrl
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Bengaluru, Karnataka
+          </h4>
+          <p>
+            Reconstructed the home page and implemented server-side rendering
+            with Next.js to optimize SEO performance.
+          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
