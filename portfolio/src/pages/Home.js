@@ -12,17 +12,17 @@ const Home = () => {
         {/* <img className="illustrationImage" src={illustrationImage} /> */}
         <h2>Hi, my name is Anushka</h2>
         <div className="prompt">
-          <p>
-            An aspiring software developer with a passion for learning and
-            creating.
-          </p>
-          <a href="https://www.linkedin.com/in/anushka-raj-bagun-9789b4195/">
+          <p>A software developer with a passion for learning and creating.</p>
+          <a
+            href="https://www.linkedin.com/in/anushka-raj-bagun-9789b4195/"
+            target="_blank"
+          >
             <LinkedInIcon />
           </a>
-          <a href="https://github.com/anushka0202">
+          <a href="https://github.com/anushka0202" target="_blank">
             <GitHubIcon />
           </a>
-          <a href="mailto:anuraj.bagun02@gmail.com">
+          <a href="mailto:anuraj.bagun02@gmail.com" target="_blank">
             <EmailIcon />
           </a>
         </div>
@@ -37,8 +37,8 @@ const Home = () => {
           <li className="item">
             <h2>Tools and Frameworks</h2>
             <span>
-              React.js, Redux, Next.js, Unit Testing, Material UI, HTML, CSS,
-              Git, Jira, C# .NET development
+              React.js, Redux Toolkit, Next.js, Unit Testing, Material UI, HTML,
+              CSS, Git, Jira, C# .NET development
             </span>
           </li>
           <li className="item">

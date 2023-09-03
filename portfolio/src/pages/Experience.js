@@ -93,6 +93,25 @@ function Experience() {
             with Next.js to optimize SEO performance.
           </p>
         </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Aug 2023 - Present"
+          iconStyle={{ background: "#7ECA9C", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            SDE 1 - iRasus Technologies
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Gurugram, Haryana
+          </h4>
+          <p>
+            Developing and optimizing the Clean Tech Preksha (TM) - Analytics &
+            Predictive Modelling Platform for Battery Storage, Charging and
+            Solar, using ReactJS, Material UI, and JavaScript.
+          </p>
+        </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
   );
