@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+}
+
+.header {
+  /* width: 100vb; */
+  /* height: 10vh; */
+  flex-shrink: 0;
+  background-color: rgba(30, 30, 30, 0.88);
+  /* padding: 1.5%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #fff;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin: 1%;
+}
+
+.add-user-conatiner {
+  flex-shrink: 0;
+  /* padding: 1.5%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-user-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+}
+
+.add-user-button {
+  width: 150px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: #1677ff;
+  margin: 1.5%;
+}
+
+.users-constainer {
+  /* width: 100%; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+/* .user {
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+} */
+
+.user {
+  width: 460px;
+  height: 339px;
+  margin: 40px;
+  padding: 1%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fcfcfc;
+  box-shadow: 2px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 1300px) {
+  .userList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .userList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .userList {
+    width: 100%;
+  }
+
+  .user {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.username {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.user-details {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.delete-button {
+  width: 97px;
+  border-radius: 5px;
+  background: #f64f2a;
+  border: none;
+  color: #fff;
+  padding: 1.5%;
+}
+.view-button {
+  width: 97px;
+  border-radius: 5px;
+  background: #1677ff;
+  border: none;
+  color: #fff;
+  padding: 1.5%;
+}
+.edit-button {
+  width: 97px;
+  border-radius: 5px;
+  background: #1677ff;
+  border: none;
+  color: #fff;
+  padding: 1.5%;
+}
