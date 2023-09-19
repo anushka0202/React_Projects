@@ -1,6 +1,7 @@
 import birthdayReminderImage from "../assets/birthday-reminder-2.jpeg";
 import populationInsightImage from "../assets/population-insight-2.jpeg";
 import todoAppImage from "../assets/todo-app-2.jpeg";
+import userInventoryImage from "../assets/user-inventory-app-2.jpeg";
 
 export const ProjectList = [
   {
@@ -26,5 +27,13 @@ export const ProjectList = [
     github:
       "https://github.com/anushka0202/React_Projects/tree/master/redux-toolkit-practice",
     demo: "https://redux-toolkit-todo-app-anushka.netlify.app/",
+  },
+  {
+    name: "User Inventory App",
+    image: userInventoryImage,
+    skills: "React JS, CSS",
+    github:
+      "https://github.com/anushka0202/React_Projects/tree/master/user-inventory",
+    demo: "https://anushka-user-inventory-app.netlify.app/",
   },
 ];
