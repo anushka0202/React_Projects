@@ -1,39 +1,23 @@
 import React, { useState } from "react";
 import Modal from "@mui/material/Modal";
 
-const AddUserModal = (props) => {
-  const [newUser, setNewUser] = useState({
-    name: "",
-    age: "",
-    date: "",
-    gender: "",
-    food: "",
-    hobbies: "",
-  });
+const EditUserModal = (props) => {
+  const [updatedUser, setUpdatedUser] = useState({ ...props.user });
 
-  const add = (e) => {
+  const update = (e) => {
     e.preventDefault();
     if (
-      newUser.name === "" ||
-      newUser.age === "" ||
-      newUser.date === "" ||
-      newUser.gender === "" ||
-      newUser.food === "" ||
-      newUser.hobbies === ""
+      updatedUser.name === "" ||
+      updatedUser.age === "" ||
+      updatedUser.date === "" ||
+      updatedUser.gender === "" ||
+      updatedUser.food === "" ||
+      updatedUser.hobbies === ""
     ) {
       alert("All the fields are mandatory!");
       return;
     }
-    props.addUserHandler(newUser);
-    setNewUser({
-      name: "",
-      age: "",
-      date: "",
-      gender: "",
-      food: "",
-      hobbies: "",
-    });
-
+    props.updateUserHandler(updatedUser);
     props.handleClose();
   };
 
@@ -46,7 +30,7 @@ const AddUserModal = (props) => {
             justifyContent: "center",
           }}
         >
-          ADD USER
+          EDIT USER
         </h2>
         <form className="form">
           <div
@@ -63,9 +47,9 @@ const AddUserModal = (props) => {
                 type="text"
                 name="name"
                 placeholder="Name"
-                value={newUser.name}
+                value={updatedUser.name}
                 onChange={(e) =>
-                  setNewUser({ ...newUser, name: e.target.value })
+                  setUpdatedUser({ ...updatedUser, name: e.target.value })
                 }
               />
             </div>
@@ -76,9 +60,9 @@ const AddUserModal = (props) => {
                 type="text"
                 name="age"
                 placeholder="Age"
-                value={newUser.age}
+                value={updatedUser.age}
                 onChange={(e) =>
-                  setNewUser({ ...newUser, age: e.target.value })
+                  setUpdatedUser({ ...updatedUser, age: e.target.value })
                 }
               />
             </div>
@@ -97,9 +81,9 @@ const AddUserModal = (props) => {
               <input
                 type="date"
                 name="date"
-                value={newUser.date}
+                value={updatedUser.date}
                 onChange={(e) =>
-                  setNewUser({ ...newUser, date: e.target.value })
+                  setUpdatedUser({ ...updatedUser, date: e.target.value })
                 }
               />
             </div>
@@ -111,9 +95,9 @@ const AddUserModal = (props) => {
                 id="Male"
                 name="gender"
                 value="Male" // Set the value attribute to the desired value
-                checked={newUser.gender === "Male"} // Check if newUser.gender is "Male"
+                checked={updatedUser.gender === "Male"} // Check if updatedUser.gender is "Male"
                 onChange={(e) =>
-                  setNewUser({ ...newUser, gender: e.target.value })
+                  setUpdatedUser({ ...updatedUser, gender: e.target.value })
                 }
               />
               <label htmlFor="Male"> Male</label>
@@ -122,9 +106,9 @@ const AddUserModal = (props) => {
                 id="Female"
                 name="gender"
                 value="Female" // Set the value attribute to the desired value
-                checked={newUser.gender === "Female"} // Check if newUser.gender is "Female"
+                checked={updatedUser.gender === "Female"} // Check if updatedUser.gender is "Female"
                 onChange={(e) =>
-                  setNewUser({ ...newUser, gender: e.target.value })
+                  setUpdatedUser({ ...updatedUser, gender: e.target.value })
                 }
               />
               <label htmlFor="Female"> Female</label>
@@ -143,10 +127,10 @@ const AddUserModal = (props) => {
               <br />
               <select
                 id="food"
-                name="food" // Set the name attribute to match the property in newUser
-                value={newUser.food} // Set the selected value to newUser.food
+                name="food" // Set the name attribute to match the property in updatedUser
+                value={updatedUser.food} // Set the selected value to updatedUser.food
                 onChange={(e) =>
-                  setNewUser({ ...newUser, food: e.target.value })
+                  setUpdatedUser({ ...updatedUser, food: e.target.value })
                 }
               >
                 <option value="" disabled selected>
@@ -164,9 +148,9 @@ const AddUserModal = (props) => {
               <textarea
                 name="hobbies"
                 maxLength={100}
-                value={newUser.hobbies}
+                value={updatedUser.hobbies}
                 onChange={(e) =>
-                  setNewUser({ ...newUser, hobbies: e.target.value })
+                  setUpdatedUser({ ...updatedUser, hobbies: e.target.value })
                 }
               />
             </div>
@@ -176,7 +160,7 @@ const AddUserModal = (props) => {
             <button className="delete-button" onClick={props.handleClose}>
               CANCEL
             </button>
-            <button className="edit-button" onClick={add}>
+            <button className="edit-button" onClick={update}>
               SUBMIT
             </button>
           </div>
@@ -186,4 +170,4 @@ const AddUserModal = (props) => {
   );
 };
 
-export default AddUserModal;
+export default EditUserModal;

@@ -1,13 +1,11 @@
 body {
   margin: 0;
+  font-family: "Roboto";
 }
 
 .header {
-  /* width: 100vb; */
-  /* height: 10vh; */
   flex-shrink: 0;
   background-color: rgba(30, 30, 30, 0.88);
-  /* padding: 1.5%; */
   display: flex;
   justify-content: space-between;
 }
@@ -68,7 +66,6 @@ body {
 }
 
 .users-constainer {
-  /* width: 100%; */
   height: auto;
   display: flex;
   justify-content: center;
@@ -77,25 +74,15 @@ body {
 }
 
 .userList {
-  width: 70vw;
+  width: 100vw;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
 
-/* .user {
-  border-radius: 15px;
-  width: 300px;
-  height: 300px;
-  margin: 40px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-} */
-
 .user {
-  width: 460px;
-  height: 339px;
+  width: 400px;
   margin: 40px;
   padding: 1%;
   flex-shrink: 0;
@@ -128,6 +115,10 @@ body {
   }
 }
 
+.field {
+  width: 50%;
+}
+
 .username {
   color: #000;
   font-family: "Roboto";
@@ -155,15 +146,9 @@ body {
   border: none;
   color: #fff;
   padding: 1.5%;
+  margin: 1.5%;
 }
-.view-button {
-  width: 97px;
-  border-radius: 5px;
-  background: #1677ff;
-  border: none;
-  color: #fff;
-  padding: 1.5%;
-}
+
 .edit-button {
   width: 97px;
   border-radius: 5px;
@@ -171,4 +156,48 @@ body {
   border: none;
   color: #fff;
   padding: 1.5%;
+  margin: 1.5%;
+}
+
+.add-user-modal {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  padding: 2%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.pagination button.active {
+  background-color: #d5caca6f;
+  font-weight: bold;
+  border: #000;
+  border-width: 2px;
+}
+
+.pagination button.prev-arrow::before {
+  content: "\2190"; /* Unicode arrow left character */
+  margin-right: 5px;
+}
+
+.pagination button.next-arrow::after {
+  content: "\2192"; /* Unicode arrow right character */
+  margin-left: 5px;
 }
