@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {/* Define your routes here */}
+          {/* Defining our routes here */}
           <Route exact path="/" element={<Home />} />
           <Route path="/questions/:questionId" element={<Question />} />
           <Route path="/report" element={<Report />} />
