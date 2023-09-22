@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Created a responsive quiz app website using React JS.
+  
+- Created a mock REST API using json-server.
 
-## Available Scripts
+# Steps to run the app
 
-In the project directory, you can run:
+- Clone the repo.
+  
+- Run `npm i json-server` to install the json server.
+  
+- Run `json-server --watch data/db.json --port 3001` to start the server.
+  
+- In a new terminal, run `npm start` to start the app.
+  
+## Screens
 
-### `npm start`
+The app contains the following screens:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+● The user clicks on the “Start” button to begin with the quiz.
 
-### `npm test`
+### Question:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+● This screen shows the questions to the user one after the other.
 
-### `npm run build`
+● The question may include an optional image to be shown below the text.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+● A question has only one correct choice.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+● The user must select at least one option before they can proceed to the next question.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+● There is a timer associated with each question.
 
-### `npm run eject`
+● After the user submits the response for the last question, he/she gets the score report.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Report:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+● Shows the total score percentage, total time taken, and number of correct and incorrect answers.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+● The “Start Again” button allows the user to take the quiz again from the beginning.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Technologies used: ReactJS, HTML, CSS
