@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Papa from "papaparse";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import Histogram from "./components/Histogram";
 import PieChart from "./components/PieChart";
 import PopulationTable from "./components/PopulationTable";
@@ -53,23 +56,54 @@ const App = () => {
   };
 
   return (
-    <>
-      <h1>Population Insight</h1>
-      <div className="container">
-        <Histogram data={data} className="grid-item" />
-        <PieChart data={data} className="grid-item" />
-        <PopulationTable
-          data={data}
-          onSelectRow={handleRowSelect}
-          className="grid-item"
-        />
-        <FamilyTree
-          selectedPerson={selectedPerson}
-          data={data}
-          className="grid-item"
-        />
-      </div>
-    </>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="container">
+                <Home />
+              </div>
+            }
+          />
+          <Route
+            path="/histogram"
+            element={
+              <div className="container">
+                <Histogram data={data} className="grid-item" />
+              </div>
+            }
+          />
+          <Route
+            path="/piechart"
+            element={
+              <div className="container">
+                <PieChart data={data} className="grid-item" />
+              </div>
+            }
+          />
+          <Route
+            path="/familytree"
+            element={
+              <div className="container">
+                <PopulationTable
+                  data={data}
+                  onSelectRow={handleRowSelect}
+                  className="grid-item"
+                />
+                <FamilyTree
+                  selectedPerson={selectedPerson}
+                  data={data}
+                  className="grid-item"
+                />
+              </div>
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

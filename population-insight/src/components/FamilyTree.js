@@ -49,7 +49,7 @@ const FamilyTree = ({ selectedPerson, data }) => {
   return (
     <div className="family-tree-container">
       <div className="tree">
-        <h2>Family Tree</h2>
+        <h1>Family Tree</h1>
         {selectedPerson && (
           <ul>{buildFamilyTree(findRootPerson(selectedPerson))}</ul>
         )}

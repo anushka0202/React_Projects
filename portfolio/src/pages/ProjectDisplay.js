@@ -15,10 +15,12 @@ const ProjectDisplay = () => {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <a href={project.demo} target="_blank">
-        <button className="btn">Live Demo</button>
-      </a>
-      <a href={project.github} target="_blank">
+      {project.demo && (
+        <a href={project.demo} target="_blank" rel="noreferrer">
+          <button className="btn">Live Demo</button>
+        </a>
+      )}
+      <a href={project.github} target="_blank" rel="noreferrer">
         <GitHubIcon />
       </a>
     </div>

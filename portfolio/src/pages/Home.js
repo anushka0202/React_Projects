@@ -16,13 +16,22 @@ const Home = () => {
           <a
             href="https://www.linkedin.com/in/anushka-raj-bagun-9789b4195/"
             target="_blank"
+            rel="noreferrer"
           >
             <LinkedInIcon />
           </a>
-          <a href="https://github.com/anushka0202" target="_blank">
+          <a
+            href="https://github.com/anushka0202"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHubIcon />
           </a>
-          <a href="mailto:anuraj.bagun02@gmail.com" target="_blank">
+          <a
+            href="mailto:anuraj.bagun02@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <EmailIcon />
           </a>
         </div>
@@ -37,8 +46,8 @@ const Home = () => {
           <li className="item">
             <h2>Tools and Frameworks</h2>
             <span>
-              React.js, Redux Toolkit, Next.js, Unit Testing, Material UI, HTML,
-              CSS, Git, Jira, C# .NET development
+              React.js, Redux, Next.js, Unit Testing, Material UI, HTML, CSS,
+              Git, Jira, C# .NET development
             </span>
           </li>
           <li className="item">

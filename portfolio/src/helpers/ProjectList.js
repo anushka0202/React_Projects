@@ -2,6 +2,7 @@ import birthdayReminderImage from "../assets/birthday-reminder-2.jpeg";
 import populationInsightImage from "../assets/population-insight-2.jpeg";
 import todoAppImage from "../assets/todo-app-2.jpeg";
 import userInventoryImage from "../assets/user-inventory-app-2.jpeg";
+import quizAppImage from "../assets/quiz-app-2.jpeg";
 
 export const ProjectList = [
   {
@@ -35,5 +36,12 @@ export const ProjectList = [
     github:
       "https://github.com/anushka0202/React_Projects/tree/master/user-inventory",
     demo: "https://anushka-user-inventory-app.netlify.app/",
+  },
+  {
+    name: "Quiz App",
+    image: quizAppImage,
+    skills: "ReactJS, CSS, json-server",
+    github:
+      "https://github.com/anushka0202/React_Projects/tree/master/quiz-app",
   },
 ];

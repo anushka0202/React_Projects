@@ -46,7 +46,7 @@ const PieChart = ({ data }) => {
   // Render the pie chart
   return (
     <div className="pie-chart-container">
-      <h2>Pie Chart</h2>
+      <h1>Pie Chart</h1>
       <Pie data={chartData} />
     </div>
   );

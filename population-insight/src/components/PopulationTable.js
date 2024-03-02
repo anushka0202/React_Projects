@@ -3,7 +3,7 @@ import React from "react";
 const PopulationTable = ({ data, onSelectRow }) => {
   return (
     <div className="population-table-container">
-      <h2>Population Table</h2>
+      <h1>Population Table</h1>
       <table>
         {/* header row containing the column names */}
         <thead>

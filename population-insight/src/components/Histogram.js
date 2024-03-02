@@ -67,7 +67,7 @@ const Histogram = ({ data }) => {
   // Render the bar chart
   return (
     <div className="histogram-container">
-      <h2>Histogram</h2>
+      <h1>Histogram</h1>
       <Bar data={chartData} />
     </div>
   );
